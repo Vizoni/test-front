@@ -1,6 +1,18 @@
 import React from 'react'
-import './App.css'
+import Header from './Components/Header'
 
-const App = () => <div className="App">Boa sorte! 🚀</div>
+import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom'
+
+const App = () => {
+  return (
+    <BrowserRouter>
+      {/* fix header at the top */}
+      <Header />
+      <Switch>
+        <Route exact path="/" render={() => <Redirect to="bag" />} />
+      </Switch>
+    </BrowserRouter>
+  )
+}
 
 export default App
