@@ -2,6 +2,15 @@ import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
     :root {
+
+        --smaller: 0.75rem;
+        --small: 0.81rem;
+        --mid: 0.87rem;
+        --normal: 1rem;
+        --normal-plus: 1.07rem;
+
+        --radius-px: 0.18rem;
+
         --background: #eee;
         --white: #fff;
         --black: #000;

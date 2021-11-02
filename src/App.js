@@ -2,7 +2,7 @@ import React from 'react'
 import Header from './Components/Header'
 import Bag from './Pages/Bag'
 import Payment from './Pages/Payment'
-import Checkout from './Pages/Checkout'
+import Confirmation from './Pages/Confirmation'
 
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom'
 
@@ -15,7 +15,7 @@ const App = () => {
         <Route exact path="/" render={() => <Redirect to="bag" />} />
         <Route exact path="/bag" component={Bag} />
         <Route exact path="/payment" component={Payment} />
-        <Route exact path="/checkout" component={Checkout} />
+        <Route exact path="/confirmation" component={Confirmation} />
       </Switch>
     </BrowserRouter>
   )

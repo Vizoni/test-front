@@ -1,4 +1,6 @@
-import React, { useEffect } from 'react'
+import React from 'react'
+
+import { transformToReal } from './../../utils/currency'
 
 import { Container, Item } from './styles'
 
@@ -6,12 +8,16 @@ const ProductsBox = ({ products }) => {
   return (
     <Container>
       {products &&
-        products.map((product) => {
+        products.map((product, index) => {
           return (
-            <Item>
-              <img src={product.product.imageObjects[0].thumbnail} />
-              <span className="text">{product.product.name}</span>
-              <span className="price">R$ {product.product.priceSpecification.price}</span>
+            <Item key={index}>
+              <img src={product.product.imageObjects[0].small} />
+              <div>
+                <span className="text">{product.product.name}</span>
+                <span className="price">
+                  {transformToReal(product.product.priceSpecification.price)}
+                </span>
+              </div>
             </Item>
           )
         })}

@@ -10,14 +10,14 @@ export const Container = styled.header`
   a {
     font-family: Helvetica, Arial, sans-serif;
     font-weight: bold;
-    font-size: 0.8rem;
+    font-size: var(--small);
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
     padding: 0.75rem 0;
     color: var(--mid-grey);
 
-    &:active {
+    &.active {
       color: var(--mid-orange);
     }
   }

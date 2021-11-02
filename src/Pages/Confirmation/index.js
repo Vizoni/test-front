@@ -4,16 +4,16 @@ import Title from '../../Components/Title'
 
 import { Container } from './styles'
 
-const Checkout = () => {
+const Confirmation = () => {
   useEffect(() => {
-    console.log('Entrou na Checkout')
+    console.log('Entrou na Confirmation')
   }, [])
 
   return (
     <Container>
-      <Title>checkout</Title>
+      <Title>Confirmation</Title>
     </Container>
   )
 }
 
-export default Checkout
+export default Confirmation

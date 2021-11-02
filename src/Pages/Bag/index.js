@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 
 import Title from '../../Components/Title'
 import ProductsBox from '../../Components/ProductsBox'
+import Checkout from '../../Components/Checkout'
 import { useCart } from '../../Context/Cart'
 
 import { Container } from './styles'
@@ -20,6 +21,7 @@ const Bag = () => {
     <Container>
       <Title>Produtos</Title>
       <ProductsBox products={cart.items}></ProductsBox>
+      <Checkout cart={cart} />
     </Container>
   )
 }
