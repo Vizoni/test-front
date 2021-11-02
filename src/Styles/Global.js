@@ -4,6 +4,9 @@ export const GlobalStyle = createGlobalStyle`
     :root {
         --background: #eee;
         --white: #fff;
+        --black: #000;
+        
+        --light-black: #212122;
 
         --light-orange: #ff7800;
         --mid-orange: #FF6C00;
@@ -17,6 +20,7 @@ export const GlobalStyle = createGlobalStyle`
     * {
         margin: 0;
         padding: 0;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
 
     body {
@@ -29,8 +33,8 @@ export const GlobalStyle = createGlobalStyle`
         width: 100%;
     }
 
+
     input, button, label, p, a, strong {
-        font-family: "Helvetica Neue", Helvetica, Arial;
         color: var(--dark-grey);
     }
 `

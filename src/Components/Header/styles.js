@@ -10,7 +10,7 @@ export const Container = styled.header`
   a {
     font-family: Helvetica, Arial, sans-serif;
     font-weight: bold;
-    font-size: 0.81rem;
+    font-size: 0.8rem;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
