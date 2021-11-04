@@ -6,6 +6,7 @@ export const Container = styled.header`
   background-color: var(--white);
   justify-content: space-around;
   width: 100%;
+  box-shadow: 1px 1px 5px 0 rgba(0, 0, 29, 0.22);
 
   a {
     font-family: Helvetica, Arial, sans-serif;

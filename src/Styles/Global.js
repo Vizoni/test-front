@@ -8,6 +8,7 @@ export const GlobalStyle = createGlobalStyle`
         --mid: 0.87rem;
         --normal: 1rem;
         --normal-plus: 1.07rem;
+        --big: 1.25rem;
 
         --radius-px: 0.18rem;
 

@@ -14,7 +14,7 @@ export const Item = styled.div`
   flex-direction: row;
   background-color: var(--white);
   margin: 0.5rem 0.75rem;
-  height: 14vh;
+  height: 11vh;
   border: 1px solid var(--background);
   border-radius: var(--radius-px);
 
