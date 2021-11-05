@@ -6,7 +6,7 @@ export const Container = styled.div`
   background-color: var(--white);
   border-radius: var(--radius-px);
   margin: 0 0.5rem;
-  box-shadow: 1px 1px 5px 0 rgba(0, 0, 40, 0.3);
+  box-shadow: 1px 1px 5px 0 rgba(0, 0, 29, 0.22);
 
   span {
     font-size: var(--smaller);

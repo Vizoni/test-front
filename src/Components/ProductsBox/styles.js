@@ -6,7 +6,7 @@ export const Container = styled.div`
   background-color: var(--white);
   border-radius: var(--radius-px);
   margin: 0 0.5rem;
-  box-shadow: 1px 1px 5px 0 rgba(0, 0, 40, 0.3);
+  box-shadow: 1px 1px 5px 0 rgba(0, 0, 29, 0.22);
 `
 
 export const Item = styled.div`
@@ -14,7 +14,7 @@ export const Item = styled.div`
   flex-direction: row;
   background-color: var(--white);
   margin: 0.5rem 0.75rem;
-  height: 11vh;
+  height: 14vh;
   border: 1px solid var(--background);
   border-radius: var(--radius-px);
 
