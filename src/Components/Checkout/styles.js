@@ -15,7 +15,7 @@ export const Container = styled.div`
     justify-content: space-between;
     margin: 0.25rem 1rem;
     font-size: var(--mid);
-    line-height: 17px;
+    /* line-height: 1.06rem; */
     text-transform: uppercase;
     color: var(--light-black);
 
@@ -29,7 +29,7 @@ export const Container = styled.div`
 
     &:last-child {
       font-weight: bolder;
-      margin: 0.5rem 1rem 1rem 1rem;
+      margin: 0.75rem 1rem 1rem 1rem;
     }
   }
 `

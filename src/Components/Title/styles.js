@@ -10,5 +10,5 @@ export const TitleText = styled.span`
   width: 100%;
   text-transform: uppercase;
   color: var(--dark-grey);
-  font-size: 0.85rem;
+  font-size: var(--small);
 `

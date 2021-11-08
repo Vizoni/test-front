@@ -12,7 +12,7 @@ export const Container = styled.div`
     font-size: var(--smaller);
     color: var(--mid-grey);
     font-weight: bold;
-    line-height: var(--mid);
+    /* line-height: 0.87rem; */
     margin-bottom: 0.25rem;
   }
 
@@ -21,14 +21,14 @@ export const Container = styled.div`
     border: 1px solid #e7e7e7;
     border-radius: var(--radius-px);
     font-size: var(--normal);
-    letter-spacing: 1.37px;
-    line-height: 1.18rem;
+    letter-spacing: 0.08rem;
+    /* line-height: 1.18rem; */
     box-shadow: inset 0px 1px 2px 0 rgba(0, 0, 0, 0.2);
     padding: 0.7rem;
 
     ::placeholder {
       color: #e0e7ee;
-      line-height: 19px;
+      /* line-height: 1.18rem; */
     }
   }
 `
@@ -36,9 +36,10 @@ export const Container = styled.div`
 export const CardDetails = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 
   div {
-    width: 9.5rem;
+    width: 44%;
   }
 `
 

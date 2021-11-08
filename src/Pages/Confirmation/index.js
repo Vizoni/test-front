@@ -34,7 +34,7 @@ const Confirmation = () => {
         <span>05/2019</span>
       </Box>
       <Title>Produtos</Title>
-      <ProductsBox products={cart.items} displayPrice={false} useThumbnail={true}></ProductsBox>
+      <ProductsBox products={cart.items} displayPrice={false} useThumbnail={true} />
       <Checkout cart={cart} />
     </Container>
   )

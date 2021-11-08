@@ -10,12 +10,12 @@ export const Container = styled.button`
   font-size: 0.68rem;
   text-transform: uppercase;
   margin: 0 0.5rem;
-  line-height: 24px;
-  letter-spacing: 0.5px;
+  /* line-height: 1.5rem; */
+  letter-spacing: 0.03rem;
   justify-content: center;
   align-items: center;
-  height: 60px;
-  border: 3px solid var(--mid-orange);
+  height: 3.75rem;
+  border: var(--radius-px) solid var(--mid-orange);
   border-radius: var(--radius-px);
   box-shadow: 0 3px 0px 0px var(--dark-orange), 0 2px 4px 0px rgba(0, 0, 0, 0.25);
 `

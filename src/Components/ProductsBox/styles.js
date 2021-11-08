@@ -14,7 +14,6 @@ export const Item = styled.div`
   flex-direction: row;
   background-color: var(--white);
   margin: 0.5rem 0.75rem;
-  height: 14vh;
   border: 1px solid var(--background);
   border-radius: var(--radius-px);
 
@@ -27,8 +26,8 @@ export const Item = styled.div`
   }
 
   img {
-    width: 20vw;
-    margin: 0.25rem;
+    width: 5rem;
+    margin: 0.5rem 0.25rem;
     object-fit: contain;
   }
 
@@ -42,13 +41,13 @@ export const Item = styled.div`
     .text {
       color: var(--light-black);
       font-size: var(--small);
-      line-height: 16px;
+      /* line-height: 1rem; */
     }
 
     .price {
       color: var(--black);
       font-size: var(--normal);
-      line-height: 17px;
+      /* line-height: 1.06rem; */
       font-weight: bold;
       margin: 0 0.25rem 0.25rem 0;
       display: flex;

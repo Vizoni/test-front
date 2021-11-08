@@ -19,7 +19,7 @@ export const SuccessMessage = styled.div`
     text-transform: uppercase;
     color: var(--light-orange);
     font-size: var(--mid);
-    line-height: 17px;
+    /* line-height: 1.06rem; */
     font-weight: bold;
     margin: 0.5rem 0;
   }
@@ -38,7 +38,7 @@ export const Box = styled.div`
   span {
     text-transform: uppercase;
     font-size: var(--mid);
-    line-height: 17px;
+    /* line-height: 1.06rem; */
     color: var(--black);
     margin: 0 0.75rem;
   }

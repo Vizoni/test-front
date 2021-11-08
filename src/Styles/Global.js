@@ -47,4 +47,27 @@ export const GlobalStyle = createGlobalStyle`
     input, button, label, p, a, strong {
         color: var(--dark-grey);
     }
+
+    @media(min-width: 30rem) {
+        :root {
+            --smaller: 1.07rem;
+            --small: 1.125rem;
+            --mid: 1.25rem;
+            --normal: 1.5rem;
+            --normal-plus: 1.75rem;
+            --big: 2rem;
+        }
+    }
+
+    @media(min-width: 75rem) {
+        :root {
+            --smaller: 1.75rem;
+            --small: 2rem;
+            --mid: 2.125rem;
+            --normal: 2.25rem;
+            --normal-plus: 2.5rem;
+            --big: 3rem;
+        }
+    }
+
 `
