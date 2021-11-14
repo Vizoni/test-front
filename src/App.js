@@ -18,8 +18,8 @@ const App = () => {
           <Route exact path="/bag" component={BagPage} />
           <Route path="/payment" component={PaymentPage} />
           <Route path="/confirmation" component={ConfirmationPage} />
+          <Route exact path="/" render={() => <Redirect to="/bag" />} />
         </Suspense>
-        <Route exact path="/" render={() => <Redirect to="bag" />} />
       </Switch>
     </BrowserRouter>
   )
