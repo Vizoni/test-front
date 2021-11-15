@@ -19,14 +19,10 @@ const Payment = () => {
     getData()
   }, [])
 
-  useEffect(() => {
-    console.log('Entrou na Payment')
-  }, [])
-
   return (
     <Container>
       <Title>Cartão de Crédito</Title>
-      <CreditCard></CreditCard>
+      <CreditCard />
       <Checkout cart={cart} />
       <Button text="Finalizar o pedido" />
     </Container>

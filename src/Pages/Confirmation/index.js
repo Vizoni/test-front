@@ -33,9 +33,13 @@ const Confirmation = () => {
         <span>JOSÉ DA SILVA</span>
         <span>05/2019</span>
       </Box>
-      <Title>Produtos</Title>
-      <ProductsBox products={cart.items} displayPrice={false} useThumbnail={true} />
-      <Checkout cart={cart} />
+      {cart.items && (
+        <>
+          <Title>Produtos</Title>
+          <ProductsBox products={cart.items} displayPrice={false} useThumbnail={true} />
+          <Checkout cart={cart} />
+        </>
+      )}
     </Container>
   )
 }

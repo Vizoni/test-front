@@ -21,9 +21,13 @@ const Bag = () => {
 
   return (
     <Container>
-      <Title>Produtos</Title>
-      <ProductsBox products={cart.items} />
-      <Checkout cart={cart} />
+      {cart.items && (
+        <>
+          <Title>Produtos</Title>
+          <ProductsBox products={cart.items} />
+          <Checkout cart={cart} />
+        </>
+      )}
       <Button text="Seguir para o pagamento" />
     </Container>
   )

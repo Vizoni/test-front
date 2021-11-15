@@ -7,10 +7,14 @@ export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState({})
 
   const getCartInfo = async () => {
-    const details = await getCart()
-    console.log('Cart Context', details.data)
-    setCart(details.data)
-    return details.data
+    if (!cart.items) {
+      try {
+        const details = await getCart()
+        setCart(details.data)
+      } catch (err) {
+        console.log('getCart Error', err.message)
+      }
+    }
   }
 
   return <CartContext.Provider value={{ cart, getCartInfo }}>{children}</CartContext.Provider>
