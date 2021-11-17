@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 
-import { transformToReal } from './../../utils/currency'
+import { transformToReal } from '../../Utils/Currency'
 
 import { Container } from './styles'
 
