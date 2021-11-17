@@ -2,10 +2,10 @@ import React from 'react'
 
 import { Container } from './styles'
 
-const Button = ({ text }) => {
+const Button = ({ text, onClick, disabled }) => {
   return (
-    <Container>
-      <h1>{text}</h1>
+    <Container onClick={onClick} disabled={disabled}>
+      {text}
     </Container>
   )
 }

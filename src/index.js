@@ -5,12 +5,15 @@ import App from './App'
 import * as serviceWorker from './serviceWorker'
 import { GlobalStyle } from './Styles/Global'
 import { CartProvider } from './Context/Cart'
+import { CreditCardProvider } from './Context/CreditCard'
 
 const Strict = () => (
   <StrictMode>
     <CartProvider>
-      <GlobalStyle />
-      <App />
+      <CreditCardProvider>
+        <GlobalStyle />
+        <App />
+      </CreditCardProvider>
     </CartProvider>
   </StrictMode>
 )

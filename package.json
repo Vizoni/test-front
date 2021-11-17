@@ -11,6 +11,7 @@
     "axios": "^0.24.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-masked-field": "^2.1.0",
     "react-router-dom": "^5.3.0",
     "react-scripts": "3.4.4",
     "styled-components": "^5.3.3"

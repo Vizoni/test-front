@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { useHistory } from 'react-router-dom'
 
 import Title from '../../Components/Title'
 import ProductsBox from '../../Components/ProductsBox'
@@ -11,6 +12,7 @@ import { Container } from './styles'
 
 const Bag = () => {
   const { cart, getCartInfo } = useCart()
+  const history = useHistory()
 
   useEffect(() => {
     const getData = async () => {
@@ -28,7 +30,7 @@ const Bag = () => {
           <Checkout cart={cart} />
         </>
       )}
-      <Button text="Seguir para o pagamento" />
+      <Button text="Seguir para o pagamento" onClick={() => history.push('/payment')} />
     </Container>
   )
 }
