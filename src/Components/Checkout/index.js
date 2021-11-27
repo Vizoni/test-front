@@ -10,7 +10,7 @@ const Checkout = ({ cart }) => {
   }
 
   return (
-    <Container>
+    <Container data-testId="checkout-component">
       <div>
         <span>Produtos</span>
         <span>{transformToReal(cart.subTotal)}</span>
@@ -21,7 +21,7 @@ const Checkout = ({ cart }) => {
       </div>
       <div>
         <span>Desconto</span>
-        <span>- {transformToReal(cart.discount)}</span>
+        <span data-testId="discount-span">- {transformToReal(cart.discount)}</span>
       </div>
       <div>
         <span>Total</span>

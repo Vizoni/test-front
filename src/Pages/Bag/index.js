@@ -4,7 +4,7 @@ import { useHistory } from 'react-router-dom'
 import Title from '../../Components/Title'
 import ProductsBox from '../../Components/ProductsBox'
 import Checkout from '../../Components/Checkout'
-import Button from '../../Components/button'
+import Button from '../../Components/Button'
 
 import { useCart } from '../../Context/Cart'
 
