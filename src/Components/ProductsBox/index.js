@@ -10,16 +10,19 @@ const ProductsBox = ({ products, displayPrice = true, useThumbnail = false }) =>
   }
 
   return (
-    <Container>
+    <Container data-testId="product-box-component">
       {products &&
         products.map((product, index) => {
           return (
-            <Item key={index}>
-              <img src={getImageSize(product.product.imageObjects[0])} />
+            <Item key={index} data-testId="product-item">
+              <img
+                src={getImageSize(product.product.imageObjects[0])}
+                data-testId="product-image"
+              />
               <div>
                 <span className="text">{product.product.name}</span>
                 {displayPrice && (
-                  <span className="price">
+                  <span className="price" data-testId="price">
                     {transformToReal(product.product.priceSpecification.price)}
                   </span>
                 )}

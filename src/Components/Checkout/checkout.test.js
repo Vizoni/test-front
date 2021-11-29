@@ -1,4 +1,4 @@
-import { render, screen, fireEvent } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import '@testing-library/jest-dom'
 import React from 'react'
 
@@ -13,7 +13,7 @@ let props = {
 }
 
 describe('<Checkout/>', () => {
-  it('Shoulde render Checkout Component', () => {
+  it('Should render Checkout Component', () => {
     render(<Checkout {...props} />)
     const mainDiv = screen.getByTestId('checkout-component')
     expect(mainDiv).toBeInTheDocument()
