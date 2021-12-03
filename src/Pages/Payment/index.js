@@ -1,13 +1,13 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
 
-import Checkout from '../../Components/Checkout'
-import Button from '../../Components/Button'
-import Title from '../../Components/Title'
-import CreditCard from '../../Components/CreditCard'
+import Checkout from '../../components/Checkout'
+import Button from '../../components/Button'
+import Title from '../../components/Title'
+import CreditCard from '../../components/CreditCard'
 
-import { useCart } from '../../Context/Cart'
-import { useCreditCard } from '../../Context/CreditCard'
+import { useCart } from '../../context/Cart'
+import { useCreditCard } from '../../context/CreditCard'
 
 import { Container } from './styles'
 

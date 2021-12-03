@@ -2,7 +2,7 @@ import React from 'react'
 import MaskedField from 'react-masked-field'
 
 import { Container, Item, CardDetails } from './styles'
-import { useCreditCard } from '../../Context/CreditCard'
+import { useCreditCard } from '../../context/CreditCard'
 
 const CreditCard = () => {
   const { creditCardFormValues, formErrors, handleChange } = useCreditCard()

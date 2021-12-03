@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
 
-import Title from '../../Components/Title'
-import ProductsBox from '../../Components/ProductsBox'
-import Checkout from '../../Components/Checkout'
-import Button from '../../Components/Button'
+import Title from '../../components/Title'
+import ProductsBox from '../../components/ProductsBox'
+import Checkout from '../../components/Checkout'
+import Button from '../../components/Button'
 
-import { useCart } from '../../Context/Cart'
+import { useCart } from '../../context/Cart'
 
 import { Container } from './styles'
 

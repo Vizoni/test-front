@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom'
 import './index.css'
 import App from './App'
 import * as serviceWorker from './serviceWorker'
-import { GlobalStyle } from './Styles/Global'
-import { CartProvider } from './Context/Cart'
-import { CreditCardProvider } from './Context/CreditCard'
+import { GlobalStyle } from './styles/Global'
+import { CartProvider } from './context/Cart'
+import { CreditCardProvider } from './context/CreditCard'
 
 const Strict = () => (
   <StrictMode>

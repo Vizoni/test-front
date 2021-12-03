@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { transformToReal } from '../../Utils/Currency'
+import { transformToReal } from '../../utils/Currency'
 
 import { Container, Item } from './styles'
 

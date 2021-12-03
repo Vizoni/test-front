@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
 
-import ProductsBox from '../../Components/ProductsBox'
-import Checkout from '../../Components/Checkout'
-import Title from '../../Components/Title'
+import ProductsBox from '../../components/ProductsBox'
+import Checkout from '../../components/Checkout'
+import Title from '../../components/Title'
 
-import { useCart } from '../../Context/Cart'
+import { useCart } from '../../context/Cart'
 
 import { Container, Box, SuccessMessage } from './styles'
 

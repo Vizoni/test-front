@@ -1,11 +1,11 @@
 import React, { lazy, Suspense } from 'react'
-import Header from './Components/Header'
+import Header from './components/Header'
 
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom'
 
-const BagPage = lazy(() => import('./Pages/Bag'))
-const PaymentPage = lazy(() => import('./Pages/Payment'))
-const ConfirmationPage = lazy(() => import('./Pages/Confirmation'))
+const BagPage = lazy(() => import('./pages/Bag'))
+const PaymentPage = lazy(() => import('./pages/Payment'))
+const ConfirmationPage = lazy(() => import('./pages/Confirmation'))
 
 const App = () => {
   return (
