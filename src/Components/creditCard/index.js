@@ -1,66 +1,74 @@
-import React from 'react'
-import MaskedField from 'react-masked-field'
+import React, { useEffect } from 'react'
+import InputMask from 'react-input-mask'
+import { useForm } from 'react-hook-form'
+import { yupResolver } from '@hookform/resolvers/yup'
 
 import { Container, Item, CardDetails } from './styles'
-import { useCreditCard } from '../../context/CreditCard'
+import schema from './validation'
 
-const CreditCard = () => {
-  const { creditCardFormValues, formErrors, handleChange } = useCreditCard()
+const CreditCard = ({ submitCreditCardForm, setIsFormPristine }) => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isDirty }
+  } = useForm({
+    resolver: yupResolver(schema)
+  })
+
+  useEffect(() => {
+    setIsFormPristine(!isDirty)
+  }, [isDirty])
 
   return (
     <Container>
-      <form>
+      <form onSubmit={handleSubmit(submitCreditCardForm)} id="credit-card-form">
         <Item>
           <span>Número do cartão:</span>
-          <MaskedField
-            mask="9999-9999-9999-9999"
+          <InputMask
+            mask="9999.9999.9999.9999"
             placeholder="____.____.____.____"
-            className={formErrors.cardNumber ? 'error' : ''}
-            onChange={handleChange}
-            value={creditCardFormValues.cardNumber}
+            className={errors.cardNumber ? 'error' : ''}
             type="text"
             name="cardNumber"
+            {...register('cardNumber')}
           />
-          <p>{formErrors.cardNumber}</p>
+          <p>{errors.cardNumber?.message}</p>
         </Item>
         <Item>
           <span>Nome do Titular:</span>
           <input
-            type="text"
             placeholder="Como no cartão"
+            className={errors.cardHolderName ? 'error' : ''}
+            type="text"
             name="cardHolderName"
-            value={creditCardFormValues.cardHolderName}
-            onChange={handleChange}
-            className={formErrors.cardHolderName ? 'error' : ''}
+            {...register('cardHolderName')}
           />
-          <p>{formErrors.cardHolderName}</p>
+          <p>{errors.cardHolderName?.message}</p>
         </Item>
         <CardDetails>
           <Item>
             <span>Validade (mês/ano):</span>
-            <MaskedField
+            <InputMask
               mask="99/9999"
               placeholder="__/____"
-              className={formErrors.validity ? 'error' : ''}
-              onChange={handleChange}
-              value={creditCardFormValues.validity}
+              className={errors.validity ? 'error' : ''}
               type="text"
               name="validity"
+              {...register('validity')}
             />
-            <p>{formErrors.validity}</p>
+            <p>{errors.validity?.message}</p>
           </Item>
           <Item>
             <span>CVV:</span>
-            <MaskedField
+            <InputMask
               mask="999"
               placeholder="___"
-              className={formErrors.cvv ? 'error' : ''}
-              onChange={handleChange}
-              value={creditCardFormValues.cvv}
+              className={errors.cvv ? 'error' : ''}
               type="text"
               name="cvv"
+              {...register('cvv')}
             />
-            <p>{formErrors.cvv}</p>
+            <p>{errors.cvv?.message}</p>
           </Item>
         </CardDetails>
       </form>

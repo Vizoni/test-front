@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@hookform/resolvers": "^2.8.4",
     "@mdi/js": "^6.4.95",
     "@mdi/react": "^1.5.0",
     "@testing-library/jest-dom": "^4.2.4",
@@ -11,10 +12,12 @@
     "axios": "^0.24.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-masked-field": "^2.1.0",
+    "react-hook-form": "^7.20.5",
+    "react-input-mask": "^2.0.4",
     "react-router-dom": "^5.3.0",
     "react-scripts": "3.4.4",
-    "styled-components": "^5.3.3"
+    "styled-components": "^5.3.3",
+    "yup": "^0.32.11"
   },
   "scripts": {
     "start": "react-scripts start",
